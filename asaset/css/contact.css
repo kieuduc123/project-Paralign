@@ -1,25 +1,30 @@
 .contact-heading{
-    background-color: #D0584B;
+    background: #ff5959;
     /* margin-top: 8rem; */
     height: 398px;
+    padding: 7% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
 }
 .contact-heading h2{
-    padding-bottom: 8.3rem;
-    font-size: 3rem;
+    /* padding-bottom: 8.3rem; */
     color: #fff;
-    font-weight: 300;
+    font-family: "ProximaNova-Light";
+    font-size: 40px;
 }
 .contact-heading p{
+    font-family: "ProximaNova-Light";
+    margin-top: 50px;
+    color: #fff;
+    font-size: 2.5rem;
     text-align: center;
-    font-weight: 300;
+    /* font-weight: 300;
     color:  #fff;
     font-size: 2.5rem;
     line-height: 1.55;
-    list-style: 150%;
+    list-style: 150%; */
 }
 .from-layout{
     padding: 5rem 15rem;
@@ -30,17 +35,16 @@
 }
 
 .from-group {
-        border-radius: 2px;
         height: 4rem;
         width: 100%;
         display: flex;
         margin: 0 10px;
-        border: 1px solid;
 }
 
 .form-input{
     width: 100%;
-    border: none;
+    border: 1px solid #5B5B5B;
+    border-radius: 7px;
     outline: none;
      padding: 1rem;
 }
@@ -55,19 +59,22 @@
 .fa-solid{
     display: none;
 }
-.from-group:hover .fa-solid{
+/* .from-group:hover .fa-solid{
     display: block;
-}
+} */
 .ms{
     height: 11rem;
 }
 .from-group button{
+    border-radius: 8px;
+    font-size: 16px;
     width: 100%;
-    border: 4px solid var(--primary-color);
-    outline: none;
-    background-color: #D0584B;
-    background-color: var(--primary-color);
+    border: none;
     color: #fff;
+    border: none;
+    background-color: #ff5959;
+    font-family: "ProximaNova-Regular";
+    padding: 23px 82px 34px;
 }
 .logo-img{
     height: 117px;

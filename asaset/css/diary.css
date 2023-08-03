@@ -2,7 +2,7 @@
     /* margin-top: 80px; */
     width: 100%;
     height: 398px;
-    background-color: #D0584B;
+    background: rgb(255, 89, 89);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,9 +10,11 @@
 }
 .diary__title{
     margin-bottom: 83px;
-    font-size: 3rem;
+    padding-top: 75px;
     color: #fff;
     font-weight: 300;
+    font-family: "ProximaNova-Light";
+    font-size: 40px;
 }
 .diary p{
     font-weight: 300;
@@ -20,6 +22,8 @@
     font-size: 2.5rem;
     line-height: 1.55;
     list-style: 150%;
+    font-family: "ProximaNova-Light";
+    font-size: 22px;
 }
 .diary__post{
     background-color: white;
@@ -35,12 +39,14 @@
     padding-top: 5rem;
 }
 .diary__content  h1{
-    color: var(--p--color);
+    color: rgb(83, 83, 83);
     font-size: 2rem;
     font-weight: 500;
     text-transform: uppercase;
 }
 .diary__content i{
+    margin-bottom: 2rem;
+    font-family: ProximaNova-LightIt;
     font-weight: 300;
     margin-top: 2rem;
     display: block;
@@ -83,8 +89,9 @@
     height: 28px;
 }
 .list--icon span{
-    font-size: 14px;
+    font-size: 16px;
     color: var(--p--color);
+    font-family: "ProximaNova-Light";
 }
 .list--link {
         padding-right: 76px;
@@ -92,10 +99,16 @@
         justify-content: space-around;
         align-items: center;
 }
+.list--link img{
+    padding: 0 6px;
+}
 .link__share{
+    text-transform: uppercase;
+    font-family: "ProximaNova-Light";
+    font-size: 18px;
+    padding: 3px 25px 0px 0;
     color: var(--p--color);
     padding-right: 1.8rem;
-    font-size: 12px;
     text-transform: uppercase;
 }
 .diary__post--buttton {
@@ -125,27 +138,28 @@
     padding: 23px;
 }
 
-@media screen and (max-width:867px) {
+@media  (max-width:867px) {
+    .diary__content {
+        overflow: hidden;
+        padding: 1rem;
+    }
     .diary{
         text-align: center;
-    
         height: 250px;
     }
     .diary__title{
-        margin: 8rem 0 3rem;
+        margin: 6rem 0 3rem;
         font-size: 2.1rem;
     }
     .diary p{
+        margin-bottom: 2rem;
         font-size: 1.4rem;
     }
     .diary__post{
        padding: 1rem;
     }
-    .diary__content{
-        overflow: hidden;
-        padding: 3rem;
-    }
     .list--link{
+        font-size: 14px;
         padding: 0;
     }
     .diary__post--buttton{

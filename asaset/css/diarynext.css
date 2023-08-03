@@ -1,7 +1,10 @@
+.mb-80{
+    margin-bottom: 80px;
+}
 .content {
     display: flex;
-    background-color: #D0584B;
-    /* margin-top: 8rem; */
+    background: #ff5959;
+    padding: 7% 0;
     width: 100%;
     height: 400px;
     justify-content: center;
@@ -30,14 +33,17 @@
     padding: 7px;
     color: white;
     font-size: 1.5rem;
-    width: 200px;
+    width: 120px;
     height: 15px;
     border: 1px solid white;
     text-align: center;
-    background-color: #D76459;
+    background: #ff5959;
     border-radius: 3px;
 }
-
+.content a:hover{
+    background-color: #fff;
+    color:  #ff5959;
+}
 .content__poster {
    background-color: white;
    background-color: white;
@@ -50,7 +56,7 @@
 .commnets--imgs{
     width: 153px;
     height: 139px;
-    padding-left: 150px;
+    /* padding-left: 150px; */
     object-fit: cover;
 }
 .poster--bg {
@@ -68,6 +74,7 @@
     line-height: 121%;
 }
 .poster--bg p{
+    text-align: justify;
     /* width: 1139px; */
     height: 67px;
     overflow: hidden;
@@ -167,6 +174,9 @@
         justify-content: space-around;
         align-items: center;
 }
+.list--link__list img{
+    padding: 0 5px;
+}
 .link__share{
     color:  var(--p--color);
     padding-right: 1.8rem;
@@ -189,22 +199,30 @@
     margin-top: 53px;
 }
 .comments__pros {
-    margin-left: 150px;
+    width: 100%;
+    /* margin-left: 150px; */
     display: flex;
 }
-
 .comment__maxpains {
     padding-left: 2rem;
-    width: 64%;
+    width: 100%;
 }
-.commnets--img,
 .commnets--imgs {
+    height: 139px;
+    width: auto;
+
+}
+.comments--link__list img{
+    padding: 0 5px;
+
+}
+.commnets--img{
     padding-left: 150px;
     height: 139px;
     width: auto;
 }
 .comment__maxpain{
-    width: 65%;
+    width: 70%;
     margin-left: 20px;
 }
 .comment__maxpain h2,
@@ -218,18 +236,18 @@
     margin-top: 9px;
     color: var(--p--color);
     line-height: 182%;
-    font-family: "ProximaNova-Bold", sans-serif; 
-    font-weight: 300;
+    font-family: "ProximaNova-LightIt";
     font-size: 16px;
 }
 .commnets--p{
     text-align: justify;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     font-size: 1.6rem;
     color: var(--p--color);
-    line-height: 182%;
-    font-family: "ProximaNova-Bold", sans-serif; 
+    line-height: 182%; 
     font-weight: 300;
+    margin: 20px 0 50px;
+    font-family: "ProximaNova-Light";
 }
 .comments__list{
     display: flex;
@@ -247,6 +265,11 @@
     width: 142px;
     height: 28px;
 }
+.list--icon__item span{
+    font-size: 16px;
+    color: var(--p--color);
+    font-family: "ProximaNova-Light";
+}
 .list--icon span{
     font-size: 14px;
     color: var(--p--color);
@@ -257,9 +280,12 @@
         align-items: center;
 }
 .link__share{
+    text-transform: uppercase;
+    font-family: "ProximaNova-Light";
+    font-size: 18px;
+    padding: 3px 25px 0px 0;
     color: var(--p--color);
     padding-right: 1.8rem;
-    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -288,7 +314,7 @@
     
 }
 .box h2{
-    margin-left: 7.5rem;
+    margin-left: 16.5rem;
     padding-top: 3rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -299,20 +325,42 @@
 .form{
     display: flex;
     margin-bottom: 2rem;
-    padding: 0 75px;
+    padding: 0 165px;
 }
 
 .from-group {
-        border-radius: 2px;
+        border-radius: 5px;
         height: 4rem;
         width: 100%;
         display: flex;
         margin: 0 10px 0 0 ;
-        border: 1px solid;
+        border: 1px solid #7A7A7A;
 }
-
+.from-groups {
+    border-radius: 8px;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    margin: 0 10px 0 0;
+}
+.from-groups  button{
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    border: none;
+    background-color: #ff5959;
+    font-family: "ProximaNova-Regular";
+    padding: 23px 82px 34px;
+}
+.from-groups  button:hover{
+    background-color: #7A7A7A;
+    color: #FFF;
+}
 .form-input{
     width: 100%;
+    border-radius: 6px;
     border: none;
     outline: none;
      padding: 1rem;
@@ -328,9 +376,9 @@
 .fa-solid{
     display: none;
 }
-.from-group:hover .fa-solid{
+/* .from-group:hover .fa-solid{
     display: block;
-}
+} */
 .ms{
     height: 11rem;
 }
@@ -352,8 +400,15 @@
 }
 @media screen and (max-width:867px) {
     .content{
-
+        padding: 0;
         height: 300px;
+    }
+    .content__title{
+        margin-bottom: 17px;
+        padding-top: 7rem;
+    }
+    .content span{
+        margin-bottom: 3rem;
     }
     .commnets--img, 
     .commnets--imgs {
