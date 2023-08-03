@@ -251,7 +251,7 @@ nav .logo h1 a{
 .banner video{
     padding-top: 80px;
     min-width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover ;
 }
 .banner__container{
@@ -366,7 +366,6 @@ nav .logo h1 a{
     object-fit: cover;
 }
 
-
 /* end content  */
 
 /* start call to action  */
@@ -429,7 +428,6 @@ nav .logo h1 a{
 .call__text{
     position: absolute;
     top: 53px;
-    /* left: 33%; */
     z-index: 1;
     height: 510px;
     width: 513px;
