@@ -1,8 +1,7 @@
 .contact-heading{
     background: #ff5959;
-    /* margin-top: 8rem; */
-    height: 398px;
-    padding: 7% 0;
+    padding-top: 7%;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,14 +19,10 @@
     color: #fff;
     font-size: 2.5rem;
     text-align: center;
-    /* font-weight: 300;
-    color:  #fff;
-    font-size: 2.5rem;
-    line-height: 1.55;
-    list-style: 150%; */
+    padding-bottom: 7%;
 }
 .from-layout{
-    padding: 5rem 15rem;
+    padding: 5rem 0px
 }
 .form{
     display: flex;
@@ -35,18 +30,45 @@
 }
 
 .from-group {
-        height: 4rem;
-        width: 100%;
-        display: flex;
-        margin: 0 10px;
+    padding: 6px;
+    border-radius: 5px;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    margin: 0 10px 0 0 ;
+    border: 1px solid #979797;
 }
 
 .form-input{
+    font-size: 16px;
+    font-family: "ProximaNova-Regular";
     width: 100%;
-    border: 1px solid #5B5B5B;
-    border-radius: 7px;
+    border-radius: 6px;
+    border: none;
     outline: none;
      padding: 1rem;
+}
+.from-groups {
+    border-radius: 8px;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    margin: 0 10px 0 0;
+}
+.from-groups  button{
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    border: none;
+    background-color: #ff5959;
+    font-family: "ProximaNova-Regular";
+    padding: 23px 82px 34px;
+}
+.from-groups  button:hover{
+    background-color: #7A7A7A;
+    color: #FFF;
 }
 
 .xxl {
@@ -88,10 +110,11 @@
     place-items: center;
 }
 .link span {
+    font-family: "ProximaNova-Regular";
     color: #5B5B5B;
      margin-top: 15px;
-       font-size: 1.6rem;
-       line-height: 151%;
+    font-size: 1.6rem;
+    line-height: 151%;
 }
 .map{
     margin-top: 6rem;
@@ -100,9 +123,9 @@
     width: 100%;
 }
 
-@media screen and (max-width: 900px){
+@media  (max-width: 900px){
     .contact-heading{
-        height: 250px;
+        margin-top: 0;
     }
     .contact-heading h2{
         margin-top: 8rem;
@@ -125,4 +148,12 @@
     .ms{
         height: 11rem;
     }
+}
+@media  (max-width: 768px){
+.from-group {
+    padding: 0;
+    padding-bottom: 6px;
+    margin: 2rem 0 0 0;
+}
+
 }

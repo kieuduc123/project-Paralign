@@ -1,4 +1,4 @@
-/* font chu  */
+
 /*Import Fonts*/
 @font-face {
     font-family: 'ProximaNova-RegularIt';
@@ -94,6 +94,17 @@ body{
     --primary-color: #FF5959;
     --p--color: #5B5B5B;
 }
+.bg{
+    background-color: #ffffff;
+}
+
+.container{
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .sprites {
     display: inline-block;
     font-style: normal;
@@ -104,7 +115,7 @@ body{
 }
 .quote-left {
     position: absolute;
-    background-image: url(../imagas/Quote\ mark\ right@1x.png);
+    background-image: url(../imagas/Quote_mark_left@x1.png);
     width: 26px;
     height: 20px;
     margin-right: 21px;
@@ -121,50 +132,35 @@ body{
     width: 52px;
     height: 32px;
 }
-
-.container-fluid {
+/* ===========Heder======[] */
+.nav{
+    background-color: #fff;
     width: 100%;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 111;
+    height: 80px;
 
 }
 .nav-header{
     background-color: #fff;
 }
-nav{
-    position: fixed;
-    display: flex;
-    height: 80px;
-    width: 100%;
-    background-color: #fff;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    z-index: 9999;
-  }
   nav .logo {
-    margin-left: 150px;
-    display: flex;
-    color: #fff;
-    font-size: 35px;
-    font-family: "ProximaNova-LightIt", sans-serif;
-    font-weight: 300;
-    align-items: center;
-}
-nav .logo h1 a{
-    font-size: 2.5rem;
-    font-family: "ProximaNova-Light", sans-serif;
-    color: var(--primary-color);
-    padding-left: 1rem;;
-}
+    padding: 15px;
+    display: inline-block;
+ 
+} 
   nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 150px;
-    list-style: none;
+
+    padding: 31px 0;
+    float: right;
   }
   nav ul li{
-    padding: 15px 32px;
+    margin-right: 31px;
+}
+nav ul> li {
+    display: inline-block;
 }
   nav ul li a{
     color: #646464;
@@ -182,7 +178,7 @@ nav .logo h1 a{
     background: #fff;
   }
   nav .menu-btn i{
-    padding: 2rem;
+    padding: 3rem;
     color: var(--primary-color);
     font-size: 22px;
     cursor: pointer;
@@ -192,14 +188,23 @@ nav .logo h1 a{
     display: none;
   }
   @media (max-width: 920px) {
+    .container{
+        width: unset;
+    }
     nav .logo{
         margin-left: 7.5rem;
     }
+    nav .menu-btn {
+        position: absolute;
+        right: 0;
+        display: inline-block;
+    }
     nav .menu-btn i{
       display: block;
+      float: right;
     }
     #click:checked ~ .menu-btn i:before{
-      padding: 2rem;
+      padding: 3rem;
       content: "\f00d";
     }
     nav ul{
@@ -242,19 +247,22 @@ nav .logo h1 a{
 /* strart banner  */
 .banner{
     height: 636px;
+    margin-top: 80px;
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
      
 .banner video{
-    padding-top: 80px;
+    position: absolute;
     min-width: 100%;
-    /* height: 100%; */
+    min-height: 100%;
     object-fit: cover ;
 }
 .banner__container{
+    width: 100%;
     z-index: 1;
     position: absolute;
     margin-top: 20px;
@@ -320,11 +328,6 @@ nav .logo h1 a{
 /* end banner  */
 
 /* start content  */
-/* .rs{
-    margin-top: 80px !important;
-
-} */
-
 .content{
     width: 100%;
     height: 550px;
@@ -333,8 +336,15 @@ nav .logo h1 a{
    
 }
 .section-text.pull-right {
-    padding: 7%;
+    width: 50%;
     
+}
+.section{
+    padding: 53px;
+}
+.img{
+    width: 50%;
+    position: relative;
 }
 .section-text h2{
     color: var(--primary-color);
@@ -349,8 +359,14 @@ nav .logo h1 a{
     color: var(--p--color);
     padding: 34px 0 42px;
 }
+.media {
+    display: flex;
+}
 .media-left {
-    margin-right: 84px;
+    margin-right: 43px;
+}
+.media-object {
+    max-width: unset;
 }
 .media-body span {
     display: inline-block;
@@ -358,15 +374,16 @@ nav .logo h1 a{
 }
 /* ============$$$ */
 .content__section{
-    width: 50%;
+    min-height: 100%;
     object-fit: cover;
 }
 .content__section img{
+    
     width: 100%;
     object-fit: cover;
 }
-
 /* end content  */
+
 
 /* start call to action  */
 
@@ -384,7 +401,6 @@ nav .logo h1 a{
     height: 347px;
 }
 .call__layout{
-    /* height: 567px; */
     width: 100%;
     margin-top: 216px;
     display: flex;
@@ -450,13 +466,15 @@ footer {
 .contact{
     text-align: center;
 }
-.contact__icon{
-    margin-right: 16px;
+.contact__icon {
+    display: flex;
     font-size: 56px;
     margin-top: 66px;
-    margin-bottom: 69px
+    margin-bottom: 69px;
+    justify-content: center;
 }
-.contact__icon a{
+.contact__icon a {
+    padding: 5px;
     cursor: pointer;
     color: #5B5B5B;
 }
@@ -480,6 +498,28 @@ footer {
     }
 }
 @media (max-width: 992px) {
+
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .section {
+        padding: 0px;
+    }
+    .section-text.pull-right {
+        padding: 15px;
+        width: unset;
+    }
+    .img:nth-child(eveb){
+        order: 1;
+    }
+    .section-text:nth-child(odd){
+        order: 2;
+    }
     .rs{
         margin-top: 0px !important;
     }
@@ -491,7 +531,6 @@ footer {
         font-size: 2.5rem;
     }
     .banner__title h2{
-        font-size: 1.7rem;
         margin-top: 2rem;
     }
     .content{
@@ -548,20 +587,22 @@ footer {
    .banner__title{
     margin-bottom: 2rem;
    }
-   .banner{
-    height: auto;
-   }
+   /* .banner{
+    height: 330px;
+   } */
    .banner__title h1 {
-    font-size: 2.1rem;
+    font-size: 4rem;
     }
     .banner__logo{
         margin-bottom: 1rem;
 
     }
     .btn{
-        width: 100px;
-        height: 3rem;
-        font-size: 10px;
+        width: 240px;
+        font-size: 22px;
+        padding: 4% 7% 5%;
+        margin-top: 20px;
+        border-radius: 10px;
     }
     .call__bg{
         height: 200px;
