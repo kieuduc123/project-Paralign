@@ -467,7 +467,7 @@
         padding: 1rem;
     }
     .comment__maxpain{
-        width: 80%;
+        width: 90%;
         overflow: hidden;
     }
     .comment__maxpain h2{
@@ -504,6 +504,9 @@
         height: 90px;
         margin: auto;
         width: auto;
+    }
+    .post__btnbtn{
+        width: 150px;
     }
     .comments__pros { 
         display: none;
