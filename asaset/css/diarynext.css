@@ -461,7 +461,6 @@
         padding-right: 1rem;
     }
     .commnets--img{
-        /* width: 15%; */
         height: 90px;
     }
     .comments{
@@ -497,14 +496,16 @@
     .comments__pro {
         display: block;
     }
+    .coment-tym {
+        margin-right: 5px;
+    }
     .commnets--img {
         padding-left: 0;
         height: 90px;
         margin: auto;
         width: auto;
     }
-    .comments__pros {
-        
+    .comments__pros { 
         display: none;
     }
     .form{
