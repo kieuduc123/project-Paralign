@@ -44,6 +44,9 @@
     font-weight: 500;
     text-transform: uppercase;
 }
+.diary__content h1 a:hover {
+    border-bottom: 1px solid rgb(83, 83, 83);
+}   
 .diary__content i{
     margin-bottom: 2rem;
     font-family: ProximaNova-LightIt;
@@ -73,6 +76,9 @@
     margin-bottom: 1.5rem;
     margin-top: 20px;
     border-radius: 4px;
+}
+.diary__content .bg:hover{
+    background-color: #f1f1f1;
 }
 .diary__content a{
     color: var(--primary-color);
